@@ -49,4 +49,7 @@ Rails.application.configure do
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
+
+  config.neo4j.session_type = :server_db
+  config.neo4j.session_path = 'http://localhost:7000'
 end
